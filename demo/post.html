@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+	  <script src="js/function.js"></script>
+  </head>
+  <body>
+    
+	<div class="col-md-2"></div>
+	<div class="col-md-8" style="margin-top: 20px;;">
+		<h1>发布帖子</h1>
+		<form method="post" action="back/post.php" onsubmit="return post()" id="post_form">
+			<div class="form-group">
+				<label>帖子名称</label>
+				<input type="text" class="form-control" id="title" name="title" placeholder="请输入帖子的名称">
+			</div>
+			<div class="form-group">
+				<label>帖子简介</label>
+				<input type="text" class="form-control" id="description" name="description" placeholder="请输入帖子的简介">
+			</div>
+			<div class="form-group">
+				<label>帖子内容</label>
+				<textarea class="form-control" rows="20" id="content" name="content" placeholder="请输入帖子的内容" style="resize: none;"></textarea>
+			</div>
+			<div style="text-align: center;">
+				<button class="btn btn-primary col-lg-2">提交</button>
+				<a class="btn btn-danger col-lg-2" style="margin-left: 20px;">取消</a>
+			</div>
+			
+		</form>
+	</div>
+	<div class="col-md-2"></div>
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
